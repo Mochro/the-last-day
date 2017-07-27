@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<title>The Battle Station</title>
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+	
+<!-- Easybox CSS-->
+	<link rel="stylesheet" href="css/easybox.min.css" type="text/css" media="screen" />
+
+<!-- Panorama css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.panorama.css" media="screen" />
+
+
+<!--Fancybox-->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css" media="screen" />
+
+	
+
+<!-- Tooltip -->
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	
+<!-- Easybox jQuery script-->
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/easybox.min.js"></script>
+
+<!-- Easybox style-->
+	<style type="text/css">body { background-color: #222; color: #222; }
+	hr { visibility: hidden; clear: both; }
+	a { font-weight: bold; color: #E00020; text-decoration: none; }
+	.hello { padding: 32px; font-size: 18px; text-decoration: none; width: 600px; }
+
+	</style>
+
+
+
+<!-- Panorama script -->
+<script type="text/javascript" src="js/pan/jquery.panorama.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	(function($) {
+	var dragdrop, opacity, resize, easing, fade, caption;
+	var overlayLink, resizeLink, easingLink, fadeLink, captionLink, dragdropLink;
+	
+	$(function() {
+		$.easybox([{url: '#hello1'}], 0, {hideBottom: true, noNavigation: true, noClose: false, slideshow: false, autoClose: false});
+	});
+	
+})(jQuery);
+	$("img.advancedpanorama").panorama({
+	                auto_start: 0,
+			start_position: 327
+	         });
+	});
+</script>
+<script type="text/javascript" src="js/pan/jquery.advanced-panorama.js"></script>
+
+<!--lightbox script -->
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.thickbox').fancybox();
+	});
+</script>
+
+<head>
+<body onLoad="moveTo(0,0); resizeTo(1000,515);">
+<!-- Easybox content-->
+	<div class="hello" id="hello1" style="display:none;width:265px;height:320px;">
+       		<h3> THE MEETING ROOM
+       		</h3>
+       		<p>
+				Hey the doors just locked, how many times can this happen to you? Quick, you have so do something fast. There is a <em>'Use in emergency situations only'</em> above way too many buttons. It sure looks like an emergency to you, so you press the <strong>biggest</strong> and <strong>flashiest</strong> button you see and hope that there's some kind of automatic targeting system. 
+
+			</p>
+		</div>
+	
+	<div id="content">
+
+	<!-- Lightbox Content-->
+	<img src="img/bgbattleroom.gif" class="advancedpanorama" width="2000" height="375" usemap="testmap"/>
+		<map id="testmap" name="testmap"> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>  
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>  
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>  
+			<area shape="rect" coords="835,200,1350,390" href="end/ending5.html"/>
+			<area shape="rect" coords="1065,230,1163,318" href="end/ending2.html"/>
+		</map>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,326 @@
+.panorama-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #00FF00;
+	text-align: left;
+	font-size: 0px;
+	min-width: 960px;
+	cursor: move;
+}
+.panorama-container {
+	position: relative;
+	width: 100000px;
+	margin: 0;
+	padding: 0;
+
+}
+
+.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+	float: left;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 30px;
+	width: 33%;
+	text-align: center;
+	font-family: 'Arial',sans-serif;
+}
+.panorama-control-left:hover, .panorama-control-right:hover, .panorama-control-pause:hover { 
+	text-decoration: none;
+}
+.panorama-control-pause {
+	text-transform: uppercase;
+}
+.panorama-panel {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	background: #009cff;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	color: white;
+	padding: 4px;
+}
+.panorama-panel h2 {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	text-align: right;
+}
+.panorama-panel ul {
+	display: none;
+}
+.panorama {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.panorama-area {
+	border: 2px solid white;
+	opacity: 1;
+	font-size: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	width: 1000px;
+	height: 100px;
+	
+}
+.panorama-area-hover {
+	width: 1000px;
+	background-color: #00FF00;
+	cursor: pointer;
+} 
+
+
+.area0{
+	border: none;
+	background:url('../img/gif/telepadbasic2.gif');
+	height: 248px;
+	width: 546px;
+}
+
+.area0-hover {	
+	background:url('../img/gif/telepadbasic2.gif');
+	height: 248px;
+	width: 456px;
+	background-position: -228px 0px;
+}
+
+/*JUNCTION*/
+
+.area1{
+	border: none;
+	background:url('../img/gif/telepadbasic.gif');
+	height: 248px;
+	width: 546px;
+}
+.area1-hover {
+	background:url('../img/gif/telepadbasic.gif');
+	height: 248;
+	width: 456;
+	background-position: -228px 0px;
+}
+
+.area2 {
+	border: none;
+	background:url('../img/gif/bloop.png');
+	height: 255px;
+	width: 332px;
+}
+.area2-hover {
+	background:url('../img/gif/bloop.png');
+	height: 125;
+	width: 164;
+	background-position: -164px 0px;
+} 
+
+.area3 {
+	border: none;
+	cursor: pointer;
+	background: #FF0000;
+	text-align: right;
+	width: 1000px;
+	height: 100px;
+	
+}
+.area3-hover {
+	width: 1000px;
+	background-color: none;
+	cursor: pointer;
+} 
+
+/*CONFERENCE ROOM*/
+.area4 {
+	border: none;
+	background:url('../img/gif/tele3.png');
+	height: 125px;
+	width: 164px;
+	
+}
+.area4-hover {
+	background:url('../img/gif/tele3.png');
+	height: 24;
+	width: 152;
+	background-position: -76px 0px;
+	}
+	
+.area5 {
+	border: none;
+	background:url('../img/gif/tele3.png');
+	height: 125px;
+	width: 164px;
+	
+}
+.area5-hover {
+	background:url('../img/gif/tele3.png');
+	height: 24;
+	width: 152;
+	background-position: -76px 0px;
+	}
+	
+/*MONITORING STATION*/
+.area6 {
+	border: none;
+	background: #777;
+	height: 125px;
+	width: 130px;
+	}
+.area6-hover {
+	background: #b2acac;
+	}
+	
+.area7 {
+	border: none;
+	background:url('../img/gif/dooropen.png');
+	height: 106px;
+	width: 132px;	
+	}
+.area7-hover {
+	background:url('../img/gif/dooropen.png');
+	height: 106px;
+	width: 132px;
+	background-position: -132px 0px;
+	}
+
+	
+.area8 {
+	border: none;
+	background:url('../img/gif/tv.gif');
+	width: 130px;
+	height: 126px;
+	
+}
+.area8-hover {
+	background:url('../img/gif/tv.gif');
+	width: 130px;
+	height: 126px;
+	background-position: -130px 0px;
+	}
+
+.area9 {
+	border: none;
+	background:url('../img/gif/radar.png');
+	width: 100px;
+	height: 96px;
+	
+}
+.area9-hover {
+	background:url('../img/gif/radar.png');
+	width: 100px;
+	height: 96px;
+	background-position: -100px 0px;
+	background-color: none;
+	border: none;
+	color: none;
+	}
+	
+/*BATTLE ROOM*/
+.area10 {
+	border: none;
+	background-color: none;
+}
+.area10-hover {
+	color: none;
+	opacity: 0;
+	}
+	
+.area11 {
+	border: none;
+	background:url('../img/gif/button.gif');
+	height: 88px;
+	width: 98px;
+	
+}
+.area11-hover {
+	background:url('../img/gif/button.gif');
+	height: 88px;
+	width: 98px;
+	}
+
+/*LOADING DOCKS*/
+.area12 {
+	border: none;
+	background:url('../img/gif/comp.gif');
+	width: 133px;
+	height: 162px;
+}
+.area12-hover {
+	width: 133px;
+	height: 162px;
+	}
+
+/*OTHER BUTTONS*/
+.area13 {
+	border: none;
+	background:url('../img/gif/holo.gif');
+	width: 100px;
+	height: 122px;
+}
+.area13-hover {
+	background:url('../img/gif/holo.gif');
+	width: 100px;
+	height: 122px;
+	background-position: -100px 0px;
+	}
+
+.area14 {
+	border: none;
+	background:url('../img/gif/report.png');
+	width: 208px;
+	height: 64px;
+}
+.area14-hover {
+	background:url('../img/gif/report.png');
+	width: 208px;
+	height: 64px;
+	background-position: -104px 0px;
+	}
+	
+.area15 {
+	border: none;
+	background:url('../img/gif/report2.png');
+	width: 172px;
+	height: 72px;
+}
+.area15-hover {
+	background:url('../img/gif/report2.png');
+	width: 172px;
+	height: 72px;
+	background-position: -88px 0px;
+	}
+
+.area16 {
+	border: none;
+	background:url('../img/gif/rosterbinder.png');
+	width: 232px;
+	height: 90px;
+}
+.area16-hover {
+	background:url('../img/gif/rosterbinder.png');
+	width: 232px;
+	height: 90px;
+	background-position: -116px 0px;
+	}
+	
+	
+.area17 {
+	border: none;
+	background:url('../img/gif/quotepap.png');
+	width: 116px;
+	height: 34px;
+}
+.area17-hover {
+	background:url('../img/gif/quotepap.png');
+	width: 116px;
+	height: 34px;
+	background-position: -58px 0px;
+	}

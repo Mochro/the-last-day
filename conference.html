@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<title>The Meeting Room</title>
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+	
+<!-- Easybox CSS-->
+	<link rel="stylesheet" href="css/easybox.min.css" type="text/css" media="screen" />
+
+<!-- Panorama css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.panorama.css" media="screen" />
+
+
+<!--Fancybox-->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css" media="screen" />
+
+	
+<!-- Easybox jQuery script-->
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/easybox.min.js"></script>
+
+<!-- Easybox style-->
+	<style type="text/css">body { background-color: #222; color: #222; }
+	hr { visibility: hidden; clear: both; }
+	a { font-weight: bold; color: #E00020; text-decoration: none; }
+	.hello { padding: 32px; font-size: 18px; text-decoration: none; width: 600px; }
+
+	</style>
+
+
+
+<!-- Panorama script -->
+<script type="text/javascript" src="js/pan/jquery.panorama.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	(function($) {
+	var dragdrop, opacity, resize, easing, fade, caption;
+	var overlayLink, resizeLink, easingLink, fadeLink, captionLink, dragdropLink;
+	
+	$(function() {
+		$.easybox([{url: '#hello1'}], 0, {hideBottom: true, noNavigation: true, noClose: false, slideshow: false, autoClose: false});
+	});
+	
+})(jQuery);
+	$("img.advancedpanorama").panorama({
+	                auto_start: 0,
+			start_position: 655
+	         });
+	});
+</script>
+<script type="text/javascript" src="js/pan/jquery.advanced-panorama.js"></script>
+
+
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.thickbox').fancybox();
+	});
+</script>
+
+
+<head>
+<body onLoad="moveTo(0,0); resizeTo(1000,515);">
+<!-- Easybox content-->
+	<div class="hello" id="hello1" style="display:none;width:265px;height:320px;">
+       		<h3> THE MEETING ROOM
+       		</h3>
+       		<p>
+				So this seems to be a conference room. Dunno what you were expecting, because it just looks like they hold meetings in here, very exciting. You poke around at the papers left in a mess on the table and notice another doorway on the other side of the room. 
+				<br/><br/><br/></br>
+				<em>Click</em> on items to take a look.
+
+			</p>
+		</div>
+	
+	<div id="content">
+
+	<!-- Lightbox Content-->
+	<img src="img/bgconference.png" class="advancedpanorama" width="2000" height="375" usemap="testmap"/>
+		<map id="testmap" name="testmap"> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>  
+			<area shape="rect" coords="88,175,164,199" href="junction.html"/>
+			<area shape="rect" coords="1094,94,1171,118" href="dock1.html"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>   
+			<area shape="rect" coords="0,0,0,0" alt="nope"/>
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="1087,185,1187,307"  href="img/story/hologram.png" class="thickbox"/>
+			
+			<area shape="rect" coords="875,245,979,309"  href="img/story/report1.png" class="thickbox"/>
+			<area shape="rect" coords="1335,255,1421,327"  href="img/story/report2.png" class="thickbox"/>
+			<area shape="rect" coords="1780,256,1896,346"  href="img/story/roster.png" class="thickbox"/>
+			<area shape="rect" coords="570,300,628,334"  href="img/story/quote.png" class="thickbox"/>
+			
+		</map>
+	</div>
+	
+</body>
+</html>

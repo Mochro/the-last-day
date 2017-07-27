@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<title>The Observatory</title>
+	
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+	
+<!-- Easybox CSS-->
+	<link rel="stylesheet" href="css/easybox.min.css" type="text/css" media="screen" />
+
+<!-- Panorama css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.panorama.css" media="screen" />
+
+<!-- Easybox jQuery script-->
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/easybox.min.js"></script>
+
+<!-- Easybox style-->
+	<style type="text/css">body { background-color: #222; color: #222; overflow: hidden;}
+	hr { visibility: hidden; clear: both; }
+	a { font-weight: bold; color: #E00020; text-decoration: none; }
+	.hello { padding: 32px; font-size: 18px; text-decoration: none; width: 600px; }
+
+	</style>
+<script type="text/javascript">
+	 var t = 0;
+
+	function moveit() {
+	    t += 0.001;
+
+	    var r = 800;
+    	var xcenter = 700;
+	    var ycenter = -700;
+		var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+	    var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+    	$('#friends').animate({
+        top: newTop,
+        left: newLeft,
+        
+    }, 1, function() {
+        moveit();
+    });
+}
+
+
+</script>
+
+
+<!-- Panorama script -->
+<script type="text/javascript" src="js/pan/jquery.panorama.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	(function($) {
+	moveit();
+	var dragdrop, opacity, resize, easing, fade, caption;
+	var overlayLink, resizeLink, easingLink, fadeLink, captionLink, dragdropLink;
+	
+	$(function() {
+		$.easybox([{url: '#hello1'}], 0, {hideBottom: true, noNavigation: true, noClose: false, slideshow: false, autoClose: false});
+	});
+	
+	
+	
+
+})(jQuery);
+		$("img.advancedpanorama").panorama({
+	                auto_start: 0,
+			start_position: 1527
+	         });
+	});
+</script>
+<script type="text/javascript" src="js/pan/jquery.advanced-panorama.js"></script>
+
+
+
+<head>
+<body onLoad="moveTo(0,0); resizeTo(1000,515);">
+<!-- Easybox content-->
+	<div class="hello" id="hello1" style="display:none;width:265px;height:300px;">
+       		<h3> THE OBSERVATORY
+       		</h3>
+       		<p>
+				Wow the stars sure are pretty, you could sit here forever and watch the little pinpricks of glowing light. You never feel as small as you do now, staring into the endless space. Maybe you'll rest for a minute here.
+				<br/><br/><br/><br/><br/>
+				<em>Click</em> and <em>drag</em> to look around.
+				<br/>
+			</p>
+		</div>
+	
+
+	<div id="content">
+
+	<!-- Lightbox Content-->
+	<img src="img/bgobservatory.gif" class="advancedpanorama" width="2000" height="375" usemap="testmap"/>
+		<map id="testmap" name="testmap"> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="0,0,0,0" alt="nope"/> 
+			<area shape="rect" coords="336,111,500,361" href="junction.html"/> 
+			<a href="end/ending1.html"><img src="img/endings/ship.png" id="friends"/></a>
+		</map>
+		
+	</div>
+	
+</body>
+</html>
